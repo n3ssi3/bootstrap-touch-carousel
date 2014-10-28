@@ -70,7 +70,7 @@
             .add(this.$indicators) // fixes issue #9
             .hammer({
                 drag_lock_to_axis: true,
-                preventDefault: true,
+                preventDefault: true
             })
             .on("release dragleft dragright swipeleft swiperight", $.proxy(this._handleGestures, this));
     }
