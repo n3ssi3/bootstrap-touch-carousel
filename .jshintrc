@@ -10,5 +10,19 @@
   "curly"    : false,
   "boss"     : true,
   "expr"     : true,
-  "asi"      : true
+  "asi"      : true,
+  "esnext"   : true,
+  "bitwise"  : true,
+  "camelcase": true,
+  "immed"    : true,
+  "indent"   : 2,
+  "jquery"   : true,
+  "latedef"  : true,
+  "newcap"   : true,
+  "noarg"    : true,
+  "node"     : true,
+  "quotmark" : "single",
+  "strict"   : true,
+  "unused"   : true,
+  "trailing" : true
 }

@@ -1,11 +1,12 @@
 /* jshint node: true */
 
 function mountFolder (connect, dir) {
+  'use strict';
   return connect.static(require('path').resolve(dir));
 }
 
-module.exports = function(grunt) {
-  "use strict";
+module.exports = function (grunt) {
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
@@ -112,7 +113,7 @@ module.exports = function(grunt) {
       },
       test: {
         options: {
-            urls: ['http://127.0.0.1:<%= connect.test.options.port %>/index.html']
+          urls: ['http://127.0.0.1:<%= connect.test.options.port %>/index.html']
         }
       }
       //files: ['src/js/tests/index.html']
@@ -149,7 +150,6 @@ module.exports = function(grunt) {
       }
     }
   });
-
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');

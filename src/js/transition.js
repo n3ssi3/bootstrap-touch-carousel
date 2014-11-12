@@ -1,10 +1,10 @@
-+function ($) {
-  "use strict";
++(function ($) {
+  'use strict';
 
   /**
    * Return whole plugin if touch is not supported
    */
-  if (!("ontouchstart" in window || navigator.msMaxTouchPoints)) {
+  if (!('ontouchstart' in window || navigator.msMaxTouchPoints)) {
     return false;
   }
 
@@ -77,4 +77,4 @@
     $.support.csstransforms3d = csstransforms3d()
   })
 
-}(window.jQuery);
+} (window.jQuery));
